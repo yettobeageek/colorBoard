@@ -1,0 +1,46 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.board {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+
+.controls button {
+  color: white;
+  background-color: green;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.controls button:active {
+  transform: scale(0.9);
+}
